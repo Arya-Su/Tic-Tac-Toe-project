@@ -17,4 +17,3 @@ By following the link https://arya-su.github.io/ you can see how the game works.
 
 My experience making the game: I always want the project to be as good as possible, and when making any project, a part of me never wants to stop until everything is perfect. There is room to improve so many things here, but due to time constraints I didn't want to destroy the functional code.
 
-I won't say that I hope, but I know that I will continue to work on this project until it is the best it can be
