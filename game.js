@@ -66,7 +66,7 @@ function boxClicked(e) {
             winning_blocks.map(box => boxes[box].style.backgroundColor = winnerIndicator)
 
             gameFinished = true
-            winSound.play();
+            winSound.play()
 
             return
         }
@@ -86,7 +86,7 @@ function boxClicked(e) {
 
                     gameFinished = true
 
-                    winSound.play();
+                    winSound.play()
 
                     return
                 }
@@ -94,7 +94,7 @@ function boxClicked(e) {
             }
         } else {
             currentPlayer = currentPlayer == X_TEXT ? O_TEXT : X_TEXT
-            clickSound.play();
+            clickSound.play()
 
         }
     }
@@ -123,7 +123,7 @@ function computerPlay() {
         winning_blocks.map(box => boxes[box].style.backgroundColor = winnerIndicator)
 
         gameFinished = true
-        winSound.play();
+        winSound.play()
 
         return
     }
@@ -157,28 +157,6 @@ function restart() {
 
     currentPlayer = X_TEXT
     gameFinished = false
-}
-
-function computerPlay() {
-    // Generate random number between 0 and 8 until an empty space is found
-    let id = Math.floor(Math.random() * 9)
-    while (spaces[id]) {
-        id = Math.floor(Math.random() * 9)
-    }
-
-    // Set the space to O and update the display
-    spaces[id] = O_TEXT
-    boxes[id].innerText = O_TEXT
-
-    if (playerHasWon() !== false) {
-        PlayerText.innerHTML = `Player ${O_TEXT} has won!`
-        let winning_blocks = playerHasWon()
-
-        winning_blocks.map(box => boxes[box].style.backgroundColor = winnerIndicator)
-        return
-    }
-
-    currentPlayer = X_TEXT
 }
 
 startGame()
