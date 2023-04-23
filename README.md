@@ -7,11 +7,11 @@ It's a classic Tic Tac Toe game.
 
 This game has the following options:
 
-Two modes: Single player (against computer) and two player mode.
-1. UI with X and O symbols
-2. Reset button to start a new game
-3. Display the winner or a draw message at the end of the game
-4. I hope that the code is well-documented and readable and that the game is responsive and accessible for desktop and mobile devices (on my devices it is responsive)
+1. Two modes: Single player (against computer) and two player mode.
+2. UI with X and O symbols
+3. Reset button to start a new game
+4. Display the winner or a draw message at the end of the game
+5. I hope that the code is well-documented and readable and that the game is responsive and accessible for desktop and mobile devices (on my devices it is responsive)
 
 By following the link https://arya-su.github.io/ you can see how the game works.
 
