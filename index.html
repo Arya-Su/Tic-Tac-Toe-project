@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Project Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!---- not sounding good
+    <audio autoplay loop>
+       <source src="PP_M (mp3cut.net).mp3" type="audio/mpeg">
+    </audio> -->
+    <audio id="button_sound" src="mixkit-electronic-retro-block-hit-2185.wav"></audio>
+    <audio id="win_sound" src="mixkit-completion-of-a-level-2063.wav"></audio>
+
+
+    <div class="container">
+        <h1 id="PlayerText">Tic Tac Toe</h1>
+
+        <div class="modeBtns">
+            <label class="sP">
+                <input type="radio" name="mode" value="single" checked>
+                Single Player
+            </label>
+            <label class="dP">
+                <input type="radio" name="mode" value="double">
+                Double Player
+            </label>
+        </div>
+
+        <div id="gameboard">
+            <div class="box" id="0"></div>
+            <div class="box" id="1"></div>
+            <div class="box" id="2"></div>
+            <div class="box" id="3"></div>
+            <div class="box" id="4"></div>
+            <div class="box" id="5"></div>
+            <div class="box" id="6"></div>
+            <div class="box" id="7"></div>
+            <div class="box" id="8"></div>
+        </div>
+
+        <div class="Btn">
+            <button id="restartBtn">Restart</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+
+</html>
